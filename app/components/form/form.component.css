@@ -1,0 +1,46 @@
+.container {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #008CFF;
+    border: 2px solid grey;
+    height: 8vh;
+    opacity: 1; 
+}
+
+.h-item {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-grow: 2;
+    
+}
+
+.span-content {
+    font: normal normal normal 24px/31px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
