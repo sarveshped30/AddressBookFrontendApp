@@ -9,26 +9,27 @@
     </div>
     <div class="form-container">
         <div class="margin">
-            <form action="">
+            <form [formGroup]="addressBookForm">
                 <mat-label>Full Name</mat-label><br>
                 <mat-form-field class="fullname" appearance="outline">
-                    <input type="text" matInput>
+                    <input type="text" matInput formControlName="fullName">
                 </mat-form-field>
 
                 <mat-label>Phone Number</mat-label><br>
                 <mat-form-field class="fullname" appearance="outline">
-                    <input type="text" matInput>
+                    <input type="text" matInput formControlName="phoneNumber">
                 </mat-form-field>
 
                 <mat-label>Address</mat-label><br>
                 <mat-form-field class="fullname" appearance="outline">
-                    <textarea matInput></textarea>
+                    <textarea matInput formControlName="address"></textarea>
                 </mat-form-field>
                 <div class="bottom-fields">
                     <div>
                         <mat-label>City</mat-label><br>
                         <mat-form-field appearance="fill">
-                            <select placeholder="select city" matNativeControl required>
+                            <select placeholder="select city" matNativeControl required formControlName="city">
+                                <option value="default">select city</option>
                                 <option value="Mumbai">Mumbai</option>
                                 <option value="Pune">Pune</option>
                                 <option value="Thane">Thane</option>
@@ -43,7 +44,8 @@
                     <div>
                         <mat-label>State</mat-label><br>
                         <mat-form-field appearance="fill">
-                            <select matNativeControl required>
+                            <select matNativeControl required formControlName="state">
+                                <option value="default">select state</option>
                                 <option value="Maharashtra">MH</option>
                                 <option value="Tamil nadu">TN</option>
                                 <option value="Karnataka">KN</option>
@@ -55,13 +57,13 @@
                     <div>
                         <mat-label>Zip code</mat-label><br>
                         <mat-form-field appearance="fill">
-                            <input type="text" matInput>
+                            <input type="text" matInput formControlName="zipCode">
                         </mat-form-field>
                     </div>
                 </div>
                 <div class="button-fields">
                     <div>
-                        <button class="submit" mat-raised-button type="submit">Submit</button>
+                        <button class="submit" mat-raised-button type="submit" (click)="insert()">Submit</button>
                     </div>
                     <div>
                         <button class="reset" mat-raised-button type="reset">Reset</button>
