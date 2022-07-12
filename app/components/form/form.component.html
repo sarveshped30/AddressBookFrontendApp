@@ -3,11 +3,71 @@
         <div class="h-item">
             <span class="span-content">PERSON ADDRESS FORM</span>
         </div>
-        <button mat-icon-button class="button-item">
+        <button mat-icon-button class="button-item" routerLink="/dashboard">
             <mat-icon>cancel</mat-icon>
         </button>
     </div>
     <div class="form-container">
+        <div class="margin">
+            <form action="">
+                <mat-label>Full Name</mat-label><br>
+                <mat-form-field class="fullname" appearance="outline">
+                    <input type="text" matInput>
+                </mat-form-field>
 
+                <mat-label>Phone Number</mat-label><br>
+                <mat-form-field class="fullname" appearance="outline">
+                    <input type="text" matInput>
+                </mat-form-field>
+
+                <mat-label>Address</mat-label><br>
+                <mat-form-field class="fullname" appearance="outline">
+                    <textarea matInput></textarea>
+                </mat-form-field>
+                <div class="bottom-fields">
+                    <div>
+                        <mat-label>City</mat-label><br>
+                        <mat-form-field appearance="fill">
+                            <select placeholder="select city" matNativeControl required>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Thane">Thane</option>
+                                <option value="Nashik">Nashik</option>
+                                <option value="Nagpur">Nagpur</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Bengaluru">Bengaluru</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-label>State</mat-label><br>
+                        <mat-form-field appearance="fill">
+                            <select matNativeControl required>
+                                <option value="Maharashtra">MH</option>
+                                <option value="Tamil nadu">TN</option>
+                                <option value="Karnataka">KN</option>
+                                <option value="Andra pradesh">AP</option>
+                                <option value="Madhya pradesh">MP</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-label>Zip code</mat-label><br>
+                        <mat-form-field appearance="fill">
+                            <input type="text" matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="button-fields">
+                    <div>
+                        <button class="submit" mat-raised-button type="submit">Submit</button>
+                    </div>
+                    <div>
+                        <button class="reset" mat-raised-button type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
