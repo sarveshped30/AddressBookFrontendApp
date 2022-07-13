@@ -31,7 +31,7 @@
 
 th {
     text-align: left;
-    font: normal normal bold 18px/22px Lato;
+    font: normal normal bold 16px/20px Lato;
     letter-spacing: 0px;
     color: #658292;
     text-transform: capitalize;
@@ -48,7 +48,7 @@ th {
 
 td {
     text-align: left;
-    font: normal normal 600 16px/19px Lato;
+    font: normal normal 520 16px/19px Lato;
     letter-spacing: 0px;
     color: #3D3D3D;
     opacity: 1;

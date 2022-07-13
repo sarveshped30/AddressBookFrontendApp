@@ -6,6 +6,6 @@ export class person {
         public address: string,
         public city: string,
         public state: string,
-        public zipCode: string,
+        public zipCode: number,
     ) { }
 }

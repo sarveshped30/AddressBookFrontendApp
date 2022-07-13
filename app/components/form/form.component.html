@@ -1,3 +1,4 @@
+<!-- Form view -->
 <div class="container">
     <div class="header">
         <div class="h-item">
@@ -25,9 +26,9 @@
                     <textarea matInput formControlName="address"></textarea>
                 </mat-form-field>
                 <div class="bottom-fields">
-                    <div>
+                    <div class="city">
                         <mat-label>City</mat-label><br>
-                        <mat-form-field appearance="fill">
+                        <mat-form-field appearance="fill" class="width-property">
                             <select placeholder="select city" matNativeControl required formControlName="city">
                                 <option value="default">select city</option>
                                 <option value="Mumbai">Mumbai</option>
@@ -41,9 +42,9 @@
                             </select>
                         </mat-form-field>
                     </div>
-                    <div>
+                    <div class="state">
                         <mat-label>State</mat-label><br>
-                        <mat-form-field appearance="fill">
+                        <mat-form-field appearance="fill" class="width-property">
                             <select matNativeControl required formControlName="state">
                                 <option value="default">select state</option>
                                 <option value="Maharashtra">MH</option>
@@ -54,13 +55,14 @@
                             </select>
                         </mat-form-field>
                     </div>
-                    <div>
+                    <div class="zipCode">
                         <mat-label>Zip code</mat-label><br>
-                        <mat-form-field appearance="fill">
+                        <mat-form-field appearance="fill" class="width-property">
                             <input type="text" matInput formControlName="zipCode">
                         </mat-form-field>
                     </div>
                 </div>
+                <br><br>
                 <div class="button-fields">
                     <div>
                         <button class="submit" mat-raised-button type="submit" (click)="insert()">Submit</button>

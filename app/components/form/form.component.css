@@ -2,7 +2,7 @@
     margin: 0 auto;
     margin-top: 40px;
     width: 50%;
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     flex-direction: column;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -19,7 +19,7 @@
     align-items: center;
     background: #008CFF;
     border: 2px solid grey;
-    height: 8vh;
+    height: 20%; 
     opacity: 1; 
 }
 
@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-items: center;
     /* border: 2px solid grey; */
-    height: 100%;
+    /* height: 100%; */
 }
 
 .margin {
@@ -69,12 +69,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .button-fields {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    /* border: 2px solid grey; */
+    margin-bottom: 27px;
 }
 
 .submit {
@@ -88,3 +92,26 @@
     background-color: #c1b9b9;
     color: #FFFFFF;
 }
+
+.width-property {
+    width: 180px;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+}
+
+.state {
+    flex-shrink: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.zipCode {
+    display: flex;
+    flex-direction: column;
+
+}
+
+

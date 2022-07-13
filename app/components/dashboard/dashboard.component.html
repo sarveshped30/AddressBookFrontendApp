@@ -1,3 +1,4 @@
+<!-- Dashboard view page -->
 <div class="container">
     <div class="header">
         <div class="person-details">
@@ -15,8 +16,21 @@
             <th>Phone Number</th>
             <th>Actions</th>
         </tr>
-        <tr class="content-row">
-            
+        <tr class="content-row" *ngFor="let person of persons">
+            <td>{{person.fullName}}</td>
+            <td>{{person.address}}</td>
+            <td>{{person.city}}</td>
+            <td>{{person.state}}</td>
+            <td>{{person.zipCode}}</td>
+            <td>{{person.phoneNumber}}</td>
+            <td>
+                <button mat-icon-button color="warn" (click)="deletePerson(person.personId)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" (click)="editPerson(person)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </td>
         </tr>
     </table>
 </div>
